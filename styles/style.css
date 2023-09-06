@@ -30,9 +30,10 @@ nav a{
     font-weight: 600;
 }
 a:hover{
-    background-color: var(--bordo);
+    /* background-color: var(--bordo);
     border-radius: 5px;
-    color: var(--beige);
+    color: var(--beige); */
+    font-weight: bold;
 }
 .lista-menu{
     padding-right: 1rem;
