@@ -10,7 +10,7 @@
     box-sizing: border-box;
     /* outline: 1px solid red; */
 }
-#header{
+header{
     background: var(--beige);
     min-height: 15vh;
     height: 15vh;
@@ -18,11 +18,11 @@
     justify-content: space-around;
     align-items: center;
 }
-#header img{
+header img{
     height: 70%;
     margin: 1.5rem;
 }
-nav a{
+li a{
     padding: 0.5rem;
     text-decoration: none;
     color: rgb(116, 29, 29);
@@ -35,16 +35,16 @@ a:hover{
     color: var(--beige); */
     font-weight: bold;
 }
-.lista-menu{
+.barra_nav{
     padding-right: 1rem;
     display: flex;
     align-items: center;
     list-style-type: none;
 }
-.lista-menu li{
+.barra_nav li{
     padding: 0.5rem;
 }
-#main{
+main{
     min-height: 70vh;
     background: var(--bordo);
 }
