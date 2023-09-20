@@ -1,27 +1,29 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap');
+
 
 :root{
      /* BG-COLORS */
-    --background:#a0827c93;
-    --primary: #611101e8;
-    --secundary:#c4697dcf;
-    --tertiary:#a68781b2;
-    --btn: #5a332ab2;
+    --background:#c0b2af93;
+/*     --background:#a0827c93; */
+    --título: #571103e8;
+    --subtítulo:#851a05b7 ;
+    --párrafo:#611101e8;
+    --btn: #832611b2;
 
-    /* TEXT COLORS */
-    --text-bordo: #611101e8;
-
+    /* secundary */
+    --btn-hover: #e9245f9c ;
+    
     
     /* FONTS */
-    --font-lora: 'Lora';
+    --font-Poppins: 'Poppins';
+    --font-thin: 100;
     --font-regular: 400;
-    --font-mediun: 500;
     --font-semi-bold: 600;
-    --font-bold: 700;
+    --font-extra-bold: 700;
 
     --font-s: 15px;
-    --font-m: 28px;
+    --font-m: 20px;
     --font-l: 40px;
     --font-xl: 50px;
 }
@@ -32,39 +34,40 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    font-family: 'lora';
-    /* outline: 1px solid red; */
+    font-family: 'Poppins', sans-serif;
+   /*  outline: 1px solid blue; */
 }
 body{
     background: var(--background);
-    font-family: var(--font-lora);
+    font-family: var(--font-Poppins);
 }
 
-/* Heart */
+/*  ================== HEADER==================*/
 header{
-   /*  background: #cf8e9cc6; */
-    min-height: 15vh;
     height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: rgb(172, 166, 159);
 }
 header img{
     height: 50%;
     margin: 1.5rem;
 }
 li a{
-    padding: 0.5rem;
-    color: var(--primary);
-    letter-spacing: 0.2rem;
+    padding: 8px 20px; 
+    color: var(--btn);
+    letter-spacing: 0.1rem;
     font-weight: var(--font-semi-bold);
+    font-size: var(--font-s);
     outline: 1px solid var(--btn);
     border-radius: 10px;
 }
 a:hover{
     background: var(--btn);
     border-radius: 10px;
-    color: var(--tertiary);
+    color: var(--btn-hover);
+    
 }
 .barra_nav{
     padding-right: 1rem;
@@ -75,39 +78,44 @@ a:hover{
     padding: 0.5rem;
 }
 
-/* MAIN GENERAL */
+/*  ================== MAIN GENERAL ==================*/
 main{
-    min-height: 70vh;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
-/* SECTION HERO  */
+/*  ================== SECTION HERO ==================*/
 .section-hero{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    color: var(--text-bordo);
     margin-top: 5rem;
+    max-width: 1200px;
+    
 }
 .hero-part1{
     display: flex;
     flex-direction: column;
     width: 500px;
-    gap: 45px;
+    gap: 30px;
     padding: 10px;
-   
 }
 .hero-part1 h1 {
     text-align: center;
-    font-size: var(--font-xl);
+    font-size: var(--font-l);
     font-weight: var(--font-semi-bold);
+    color: var(--título);
 }
 .hero-part1 p {
     font-size: var(--font-s);
     font-weight: var(--font-regular);
+    color: var(--párrafo);
+    text-align: center;
 }
 .botones{
     display: flex;
@@ -115,14 +123,17 @@ main{
 }
 .botones a {
     background: var(--bordo);
-    color: var(--beige);
+    color: var(--btn);
     border-radius: 10px;
     font-weight: var(--font-semi-bold);
-    padding: 7px; outline: 1px solid var(--btn);
+    font-size: var(--font-s);
+    letter-spacing: 0.1rem;
+    padding: 8px 20px; 
+    outline: 1px solid var(--btn);
 }
 .botones a[href="#"]{
     background: var(--btn);
-    color: var(--tertiary);
+    color: var(--btn-hover);
 }
 
 .hero-img{
@@ -136,15 +147,169 @@ main{
     display: flex;
     text-align: center;
     padding: 5rem;
+    max-width: 1200px;
+
 }
 .section-about p {
-    color: var(--text-bordo);
+    font-size: var(--font-s);
+    font-weight: var(--font-regular);
+    color: var(--párrafo);
+}
+
+/*  ================== SECTION CARDS ==================*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 20px;
+    max-width: 1200px;
+    
+}
+.cards h2 {
+    font-size: var(--font-l);
+    font-weight: var(--font-semi-bold);
+    color: var(--título);
+}
+.cards p {
+    color: var(--párrafo);
+    font-size: var(--font-s);
+    font-weight: var(--font-regular);
+    text-align: center;
+
+}
+.cards-info {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.cards-info img {
+    width: 80px;
+    padding: 1rem;
+}
+.cards-info h3 {
+    padding: 2rem ;
+    text-align: center;
+    color: var(--subtítulo);
+    font-size: var(--font-m);
+    font-weight: var(--font-semi-bold);
+}
+.cards-info p {
+    padding: 10px 40px;
+    color: var(--párrafo);
     font-size: var(--font-s);
     font-weight: var(--font-regular);
 }
 
+/*  ================== SECTION CONTACT ==================*/
+.contact {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact h3 {
+    color: var(--subtítulo);
+    font-size: var(--font-m);
+    font-weight: var(--font-semi-bold);
+
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 5rem;
+    
+}
+.direc-1-2-info {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+}
+
+/*  ================== DIREC-1-2  ==================*/
+.direc-1,
+.direc-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px ;
+    width: 60%;
+}
+.ubicación,
+.mail,
+.teléfono {
+    padding: 10px;
+    width: 200px;
+    color: var(--párrafo);
+    font-size: var(--font-s);
+    font-weight: var(--font-regular);
+    gap:3px;
+}
+.sub-cards {
+    color: var(--subtítulo);
+    font-size: var(--font-m);
+    font-weight: var(--font-semi-bold);
+}
+.ubicación {
+    display: flex;
+    align-items: center;
+}
+.ubicación img {
+    width: 15px;
+}
+.mail {
+    display: flex;
+    align-items: center;
+   
+}
+.mail img {
+    width: 15px;
+}
+.teléfono {
+    display: flex;
+    align-items: center;
+    
+}
+.teléfono img {
+    width: 15px;
+}
+/*  ================== REDES SOCIALES  ==================*/
+.redes {
+    padding: 10px;
+}
+.redes img {
+    width: 25px;
+    padding: 2px;
+}
+/*  ================== MAPA==================*/
+.ubic-mapa{
+    width: 100%;
+    text-align: center;
+}
+.img-mapa {
+    width: 500px;
+    height: 450px;
+    border-radius:10px;
+}
+
 /* FOOTER */
 footer{
-    min-height: 15vh;
-    background: var(--beige);
+    text-align: center;
+    background: rgb(172, 166, 159);
+    padding: 20px;
+    color: var(--párrafo);
+    font-size: var(--font-s);
+    font-weight: var(--font-thin);
+
+}
+footer img {
+    width: 300px;
+
 }
