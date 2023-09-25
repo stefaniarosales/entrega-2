@@ -113,17 +113,33 @@
     }
 }
 @media (max-width: 391px) {
-
+    /*  ================== HEADER ==================*/
+    header {
+        max-height: 10vh;
+    }
+    header img {
+        height: 40%;
+    }
+    #img1 {
+        display: none;
+    }
+    #img2 {
+        display: flex;
+    }
+    .barra_nav {
+        top: 10vh;
+    }
     /*  ================== SECTION HERO ==================*/
-  /*   * {
-        outline: 1px solid blue;
-    } */
     .section-hero  {
         max-width: 390px;
         padding: 10px;
+        margin-top: 10vh;
     }
     .hero-part1 p {
         font-size: var(--font-xs);
+    }
+    .botones a {
+        max-width: 130px;
     }
     .hero-img {
         width: 100%;
