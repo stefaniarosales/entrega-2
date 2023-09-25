@@ -69,6 +69,8 @@
     }
     .hero-img {
         width: 350px;
+        padding: 10px;
+        border-radius: 10px;
     }
     /*  ================== SECTION ABOUT ==================*/
     .section-about { 
@@ -118,9 +120,14 @@
         text-align: center;
         width: 50%;
     }
+    .ubic-mapa {
+        padding: 10px;
+        border-radius: 10px;
+    }
     .img-mapa {
         width: 350px;
         height: 250px;
+        
     }
     /*  ================== FOOTER ==================*/
     #copyright {
