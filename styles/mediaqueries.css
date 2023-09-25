@@ -1,0 +1,137 @@
+@media (max-width: 768px) {
+    /*  ================== SECTION HERO ==================*/
+    main {
+        max-width: 768px;
+    }
+    /*  ================== SECTION HERO ==================*/
+    .section-hero {
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 768px;
+    }
+    /*  ================== SECTION ABOUT ==================*/
+    .section-about {
+        max-width: 768px; 
+        padding: 20px 60px;
+    }
+    .section-about p {
+        width: 95%;
+        text-align: center;
+    }
+    /*  ================== SECTION CARDS ==================*/
+    .cards {
+        max-width: 768px; 
+    }
+    .cards-info {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .cards-info h3 {
+        padding: 20px;
+    }
+    .cards p {
+        width: 100%;
+        text-align: center;
+        padding: 20px 60px;
+    }
+    /*  ================== SECTION CONTACT ==================*/
+    .contact {
+        flex-wrap: wrap;
+        max-width: 768px;
+    }
+    .contact-info {
+        padding: 1.5rem;
+    }
+    /* MAPA */
+    ubic-mapa {
+        padding-bottom: 3rem;
+    }
+    /*  ================== FOOTER ==================*/
+    footer {
+        height: 100;
+    }
+    footer img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 391px) {
+    /*  ================== SECTION HERO ==================*/
+  /*   * {
+        outline: 1px solid blue;
+    } */
+    .section-hero  {
+        max-width: 390px;
+        padding: 10px;
+    }
+    .hero-part1 p {
+        font-size: var(--font-xs);
+    }
+    .hero-img {
+        width: 350px;
+    }
+    /*  ================== SECTION ABOUT ==================*/
+    .section-about { 
+        max-width: 390px;
+        padding: 10px;
+        text-align: center;
+    }
+    .section-about p {
+        font-size: var(--font-xs);
+        width: 100%;
+    }
+    /*  ================== SECTION CARDS ==================*/
+    .cards {
+        padding: 10px;
+        max-width: 390px;
+
+    }
+    .cards p {
+        font-size: var(--font-xs);
+        width: 100%;
+        padding: 0;
+    }
+    /*  ================== SECTION CONTACT ==================*/ 
+    .contact {
+        max-width: 390px;
+        padding: 10px;
+    }
+    .contact-info {
+        padding: 0px;
+        gap: 5px;
+    }
+    .contact h3 {
+        text-align: center;
+    }
+    .direc-1-2-info {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .direc-1,
+    .direc-2 {
+        width: 100%;
+        align-items: center;
+    }
+    .ubicación,
+    .mail,
+    .teléfono {
+        text-align: center;
+        width: 50%;
+    }
+    .img-mapa {
+        width: 350px;
+        height: 250px;
+    }
+    /*  ================== FOOTER ==================*/
+    #copyright {
+        font-size: 10px;
+    }
+    .derechos-reservados {
+        white-space: pre;
+    }
+}
+
+
+
+
+

@@ -22,6 +22,7 @@
     --font-semi-bold: 600;
     --font-extra-bold: 700;
 
+    --font-xs: 12px;
     --font-s: 15px;
     --font-m: 20px;
     --font-l: 40px;
@@ -67,7 +68,6 @@ a:hover{
     background: var(--btn);
     border-radius: 10px;
     color: var(--btn-hover);
-    
 }
 .barra_nav{
     padding-right: 1rem;
@@ -96,7 +96,6 @@ main{
     width: 100%;
     margin-top: 5rem;
     max-width: 1200px;
-    
 }
 .hero-part1{
     display: flex;
@@ -141,7 +140,7 @@ main{
     border-radius: 10px;
 }
 
-/* SECTION ABOUT */
+/*  ================== SECTION ABOUT ==================*/
 .section-about{
     width: 100%;
     display: flex;
@@ -177,7 +176,6 @@ main{
     font-size: var(--font-s);
     font-weight: var(--font-regular);
     text-align: center;
-
 }
 .cards-info {
     display: flex;
@@ -288,7 +286,7 @@ main{
     width: 25px;
     padding: 2px;
 }
-/*  ================== MAPA==================*/
+/*  ================== MAPA ==================*/
 .ubic-mapa{
     width: 100%;
     text-align: center;
@@ -298,18 +296,15 @@ main{
     height: 450px;
     border-radius:10px;
 }
-
-/* FOOTER */
+/*  ================== FOOTER ==================*/
 footer{
     text-align: center;
     background: rgb(172, 166, 159);
     padding: 20px;
     color: var(--párrafo);
     font-size: var(--font-s);
-    font-weight: var(--font-thin);
-
+    font-weight: var(--font-regular);
 }
 footer img {
     width: 300px;
-
 }
