@@ -42,14 +42,21 @@ body{
     background: var(--background);
     font-family: var(--font-Poppins);
 }
-
 /*  ================== HEADER==================*/
+/* Ocultamos menú hamburguesa */
+#menu-toggle,
+.menu-label {
+    display: none;
+}
+
 header{
     height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: rgb(172, 166, 159);
+    position: fixed;
+    width: 100vw;
 }
 header img{
     height: 50%;
@@ -63,6 +70,7 @@ li a{
     font-size: var(--font-s);
     outline: 1px solid var(--btn);
     border-radius: 10px;
+    
 }
 a:hover{
     background: var(--btn);
@@ -94,7 +102,7 @@ main{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 20vh;
     max-width: 1200px;
 }
 .hero-part1{
@@ -119,6 +127,7 @@ main{
 .botones{
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 }
 .botones a {
     background: var(--bordo);
@@ -129,6 +138,7 @@ main{
     letter-spacing: 0.1rem;
     padding: 8px 20px; 
     outline: 1px solid var(--btn);
+    width: 150px;
 }
 .botones a[href="#"]{
     background: var(--btn);
@@ -137,7 +147,7 @@ main{
 
 .hero-img{
     width: 500px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 /*  ================== SECTION ABOUT ==================*/
@@ -206,10 +216,10 @@ main{
 /*  ================== SECTION CONTACT ==================*/
 .contact {
     display: flex;
-    max-width: 1200px;
-    width: 100%;
+    width: 100vw;
     justify-content: space-around;
     align-items: center;
+    max-width: 1200px;
 }
 .contact h3 {
     color: var(--subtítulo);
@@ -288,13 +298,14 @@ main{
 }
 /*  ================== MAPA ==================*/
 .ubic-mapa{
-    width: 100%;
     text-align: center;
+    width: 90%;
 }
 .img-mapa {
-    width: 500px;
-    height: 450px;
+    /* width: 90%; */
+    height: 300px;
     border-radius:10px;
+    
 }
 /*  ================== FOOTER ==================*/
 footer{
@@ -304,6 +315,7 @@ footer{
     color: var(--párrafo);
     font-size: var(--font-s);
     font-weight: var(--font-regular);
+    min-width: 100vw;
 }
 footer img {
     width: 300px;
